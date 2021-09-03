@@ -18,6 +18,7 @@
         <com.baomidou.datasource.version>2.5.7</com.baomidou.datasource.version>
         <com.baomidou.version>3.2.0</com.baomidou.version>
         <hutool.version>5.7.2</hutool.version>
+        <redisson.version>3.16.1</redisson.version>
     </properties>
     <dependencies>
         <dependency>
@@ -120,6 +121,12 @@
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
             <version>${hutool.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.redisson</groupId>
+            <artifactId>redisson</artifactId>
+            <version>${redisson.version}</version>
         </dependency>
     </dependencies>
 
