@@ -5,6 +5,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.example.springboot.lock.DistributedLock;
 import com.example.springboot.lock.DistributedLockCallback;
 import com.example.springboot.lock.DistributedLockTemplate;
+import org.apache.commons.beanutils.PropertyUtils;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.AfterThrowing;
@@ -14,7 +15,6 @@ import org.aspectj.lang.annotation.Pointcut;
 import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.yaml.snakeyaml.introspector.PropertyUtils;
 
 import java.lang.reflect.Method;
 import java.util.HashMap;
