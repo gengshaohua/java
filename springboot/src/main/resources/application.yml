@@ -7,8 +7,8 @@ spring:
   # redis
   redis:
     database: 10
-    host: 10.20.210.55
-    port: 6380
+    host: gengshaohua.redis.rds.aliyuncs.com
+    port: 6379
     password: Gsh180035.
     timeout: 50000
     retryAttempts: 3
