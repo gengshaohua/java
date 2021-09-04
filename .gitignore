@@ -28,3 +28,5 @@ hs_err_pid*
 /target/
 */target/
 node_modules/
+spring-framework-5.0.x
+spring-framework-5.0.2.RELEASE-中文注释版
