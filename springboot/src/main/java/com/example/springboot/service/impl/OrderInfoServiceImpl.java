@@ -36,11 +36,13 @@ public class OrderInfoServiceImpl extends ServiceImpl<OrderInfoMapper, OrderInfo
     @Override
     public void b(){
         OrderInfo orderInfo = this.getById(5);
-
         orderInfo.setModelNo("!");
         orderInfo.setStatus(3);
         orderInfo.setOrderStatus(3);
         this.updateById(orderInfo);
+       
+       
+
     }
 
 }

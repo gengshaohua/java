@@ -1,6 +1,8 @@
 package com.example.springboot;
 
 import com.example.springboot.service.OrderInfoService;
+import com.example.springboot.transcation.TranscationAnnotation;
+import com.example.springboot.transcation.TranscationManual;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -12,16 +14,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 public class TransactionTest extends SpringbootApplicationTests{
 
     @Autowired
-    private OrderInfoService orderInfoService;
+    TranscationAnnotation transcationAnnotation;
+
+    @Autowired
+    TranscationManual transcationManual;
 
     @Test
-    public void a() throws InterruptedException {
-        orderInfoService.a();
-    }
-
-    @Test
-    public void b(){
-        orderInfoService.b();
+    public void testTranscationAnnotation(){
+        transcationManual.insertUserTranscationRequiresNew();
     }
 
 

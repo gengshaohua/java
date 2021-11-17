@@ -1,15 +1,16 @@
 spring:
+  #mysql
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    username: ccr_admin
-    password: Ccr_admin2021
-    url: jdbc:mysql://10.20.210.54:3306/ccrdb?allowMultiQueries=true&useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: gengshaohua
+    password: GGGsh2021
+    url: jdbc:mysql://rm-bp1z0iou2n8v330c4pd.mysql.rds.aliyuncs.com/test_transcation?allowMultiQueries=true&useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
   # redis
   redis:
     database: 10
-    host: gengshaohua.redis.rds.aliyuncs.com
+    host: r-bp1ecb4764a8f294pd.redis.rds.aliyuncs.com
     port: 6379
-    password: Gsh180035.
+    password: GGGsh2021
     timeout: 50000
     retryAttempts: 3
     retryInterval: 1000
